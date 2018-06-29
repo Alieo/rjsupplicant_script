@@ -14,3 +14,5 @@
 例如密码为123,有线网卡名称为：enp3s0
 那么执行`install.sh`脚本：`./install.sh 123 enp3s0` 
 
+终端命令：`rj help` 即可查看帮助
+
