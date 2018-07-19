@@ -6,7 +6,7 @@ echo 请检查您的参数是否正确。
 
 nowpath=`pwd`
 
-cd ~/
+#cd ~/
 
 chmod +x *
 
