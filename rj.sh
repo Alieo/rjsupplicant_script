@@ -48,6 +48,8 @@ case $1 in
 
         echo ${userpwd} | sudo -S ./rjsupplicant.sh -u ${id} -p ${passwd} -d 0 -n ${netname} 1> output.info 2> /dev/null&
 
+        echo ${userpwd} | sudo -S service network-manager restart
+
         echo "Please wait..."
         sleep 6
         cat output.info
@@ -61,6 +63,8 @@ case $1 in
 
         echo "Please wait..."
         sleep 2
+
+        echo ${userpwd} | sudo -S service network-manager restart
 
         cat output.info
 
